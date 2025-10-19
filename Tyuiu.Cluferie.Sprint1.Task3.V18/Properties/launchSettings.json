@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Tyuiu.Cluferie.Sprint1.Task3.V18": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\пользователь\\source",
+      "remoteDebugEnabled": true
+    }
+  }
+}
