@@ -6,24 +6,29 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        
-        {
-            // Demande à l'utilisateur d'entrer les dimensions du rectangle et du carré
-            Console.Write("Veuillez entrer la largeur du rectangle (A) : ");
-            double largeur = Convert.ToDouble(Console.ReadLine());
+        DataService ds = new DataService();
 
-            Console.Write("Veuillez entrer la hauteur du rectangle (B) : ");
-            double hauteur = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Veuillez entrer la longueur du côté du carré (C) : ");
-            double cote = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("*******************************************************************************************");
+        Console.WriteLine("*ИСХОДНЫЕ ДАННЫЕ:                                                                         *");
+        Console.WriteLine("*******************************************************************************************");
 
-            // Utiliser la Bibliotheque pour calculer le nombre de carrés
-            int nombreCarrés = DataService.CalculerNombreCarrés(largeur, hauteur, cote);
+        double a = 12;
+        double b = 17;
+        double c = 6;
+        Console.WriteLine("Сторона А прамогльника = " + a);
+        Console.WriteLine("Сторона B прамогльника = " + b);
+        Console.WriteLine("Сторона B прамогльника = " + c);
 
-            // Afficher le résultat
-            Console.WriteLine($"Le nombre de carrés de côté {cote} qui peuvent tenir dans le rectangle de dimensions {largeur} x {hauteur} est : {nombreCarrés}");
-        }
+
+
+        Console.WriteLine("*******************************************************************************************");
+        Console.WriteLine("*РЕЗУЛЬТАТ:                                                                               *");
+        Console.WriteLine("*******************************************************************************************");
+
+        Console.WriteLine("Внутри прямоугольника = " + ds.HowManySquares(a, b, c));
+        Console.ReadLine();
     }
 }
+    
     
