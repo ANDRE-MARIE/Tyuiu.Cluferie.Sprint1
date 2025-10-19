@@ -3,7 +3,7 @@ using Tyuiu.Cluferie.Sprint1.Task1.V8.Lib;
 
 //Задание
 //Написат програму, которая вычисляем выражение (X * Pie) / A
-namespace Tyuiu.Dabemo.Sprint1.Task1.V0
+namespace Tyuiu.Cluferie.Sprint1.Task1.V8
 {
     internal class Program
     {
